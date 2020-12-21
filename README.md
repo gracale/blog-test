@@ -5,6 +5,6 @@
 2. c
 * 77
 * kim
-```
+```python
 print("hello")
 ```
