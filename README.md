@@ -1,10 +1,3 @@
-# 1
-## 2
+# 12.21
 
-1. A
-2. c
-* 77
-* kim
-```python
-print("hello")
-```
+学会了上传代码到github
