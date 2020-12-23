@@ -47,9 +47,12 @@ MDN 关键字
    * code // 里面的字符等宽
    * hr //分割线
    * br //break 换行
-   * a //多用于超链接 <a href="link">text</a>
-   * * target="_blank"表示在新窗口打开
-   * em //emphasis 强调
-   * strong // 也是强调
-   * quote //引用 没效果
+   * a //anchor 多用于超链接 
+    ```html
+     <a href="link">text</a>
+     <a href="target="_blank</a>表示在新窗口打开
+     ```
+   * em //emphasis 语气强调
+   * strong // 内容本身的重要性
+   * q //quote 引用 没效果
    * blockquote // 换行引用
