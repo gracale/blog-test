@@ -90,7 +90,12 @@ MDN 关键字
   * thead
   * tbody
   * tfoot
-  * * 这三个标签里面可以有th(table head组成一行),tr(table row能组成一列),td(table date加粗效果)
+  * 这三个标签里面可以有
+```
+  th(head组成一行,加粗)
+  tr(row能组成一列)
+  td(date组成一行，不粗)
+```
   * table-layout:样式,auto根据内容调整宽度,fixed尽量平均宽度
   * border-collapse:使得格子之间没有缝隙
   * border-spacing:0也能达到同样效果。此值代表各格间距
@@ -150,3 +155,30 @@ MDN 关键字
   * onchange 
   * onfocus 把鼠标指在该处
   * onblur 把鼠标从该处挪走
+## 12.24
+  vscode输入多行的办法
+  选中想输入的多行
+  ctrl+shift+P
+  输入emmet wrap
+  在框中输入ul>li*即可获得如下效果
+  ul>表示用一个ul框柱选中部分
+  *表示每一条选中都被li框柱
+  ```html
+      <ul>
+        <li>司马炎</li>
+        <li>杨骏</li>
+        <li>司马衷</li>
+        <li>贾南风</li>
+        <li>司马亮</li>
+        <li>司马玮</li>
+        <li>司马繇</li>
+    </ul>
+  ```
+## 12.28
+  * 重温如何克服拖延症,然后继续做html
+  * 学习正则表达式
+  * meta:vp的完整内容
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+```
