@@ -182,3 +182,58 @@ MDN 关键字
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 ```
+
+## 2021.1.4
+>工作荒废了几乎一星期，重新起航！
+  * css2.1使用最广泛 css3正在使用,每个模块独立升级
+  * caniuse.com 输入特性名 就能知道各个浏览器支持什么特性
+  * css只有两种语法
+```
+  选择器 {
+  属性名: 属性值;
+  /*注释*/
+  }
+```
+```
+  @charset "UTF-8"; //指定文件编码
+  @import url(2.css); //导入css文件
+  @media (min-width: 100px) and (max-width: 200px) {
+  语法一
+  } //媒体查询，以后会讲
+```
+  * 如何调试CSS 
+  1. webstorm
+  2. F12看该标签
+  3. 最强方法 Border调试法！
+```
+  怀疑某个元素有问题
+  就给这个元素加 border
+  border 没出现？说明选择器错了或者语法错了
+  border 出现了？看看边界是否符合预期
+  bug 解决了才可以把  border 删掉
+```
+  * 在哪查css资料呢
+  1. mdn 样式
+  2. css trick
+  3. 张鑫旭的博客
+***
+  * 在哪练习（抄）呢
+  1. PSD
+  * Freepik 搜索 PSD web
+  * 365PSD 里的 UI 套件还行
+  2. 效果图（不提供下载）
+  * dribbble.com 顶级设计师社区
+  3. 商业网站
+  * 直接模仿你常去的网站
+***
+  >外包公司的缺点，你做的都是重复工作。不能呆超过一年半，否则无法提升。
+  * margin默认能多宽有多宽
+  * 学精JS好过学精CSS
+## 1.5
+  >盒模型分两种，content-box和border-box
+  * 内容盒的宽度和设定的一样
+  * 边框盒的宽度=borer+padding+内容
+***
+  * 孩子之间的margin会合并
+  * 外边距合并只在上下存在
+  * border-radius:50% 就是圆形
