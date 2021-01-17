@@ -237,3 +237,118 @@ MDN 关键字
   * 孩子之间的margin会合并
   * 外边距合并只在上下存在
   * border-radius:50% 就是圆形
+***
+## 1.7
+  1. float布局，IE用的了解一下就行，以后大概用不上了。
+  * 如果图片下面有颜色溢出，加一行vertiacl-align:top;
+  * border调试可能会干扰位置，可以换成outline。
+  * 居中方法margin-left:auto; margin-right:auto;
+  * 如果需要平均布局，会需要用到负margin。负margin不会换行。
+***
+## 1.9
+  1. flex容器由两种写法
+```css
+.container{
+  display: flex; /*快捷输入 d:f + tab*/
+}/*这个会另起一行*/
+```
+```css
+.container{
+   display: inline-flex;
+}/*这个不会另起一行*/
+```
+  * flex-direction:row; 流向横/反横/纵/反纵
+  * flex-wrap: wrap; 是否换行wrap是/nowrap否
+  * justify-content: 主轴（默认为横）对齐方式
+  * align-items: 副轴（默认为纵）对齐方式
+***
+## 1.10
+  1. grid布局,快淘汰了
+## 1.11
+  1. 学习css层级
+  * float属性的div在普通div的上方
+  2. position: static;默认属性 什么都不改，所以也不用写出来
+  3. position: relative;属性
+  * z-index:1 表示比0高一层
+  4. position: absolute;属性<br>
+ <span style="color:red;">会找第一个不是static的祖先标签进行匹配，不是只找relative</span>
+> white-space:nowrap; 文字内容不准换行，通常用于button按钮
+
+```css
+button span{
+  display: none; /* 内容不显示 */
+}
+button:hover span{
+  display: inline-block; /* 鼠标挪过去才显示 */
+}
+```
+
+  * F12-style-hov-hov打钩 就可以看鼠标悬停内容
+  5. position:fix;相对于视口定位，具体来说对于iframe标签，常用语回到顶部按钮。
+  * fix不要和transform混用，会出现问题。
+  * fix别用在移动端，全是问题。
+  6. position: sticky;窗口下滑时总有一行悬浮在最上方，意为粘滞。
+  7. z-index: 层级从上到下为
+```
+99
+...
+1
+0
+-1
+...
+但是不能跑到html后面
+```
+***
+## 1.17
+  * 打开控制台按ESC，点击console旁边的三点，选择rendering，给paint flashing打钩。就可以看渲染过程。闪烁一次代表渲染一次。
+  * ctrl+shift+L 饥人谷js代码格式化
+  * csstriggers.com 写了不同浏览器的渲染方式
+***
+渲染原理
+1. HTML构建HTML树
+2. CSS构建CSS树
+3. 合并成一颗渲染树
+4. Layout-Paint-Compose依次进行
+***
+transition
+```css
+#heart{
+  margin:100px;
+  position:relative;
+  display: inline-block;
+  transition: all .5s;
+}
+#heart:hover{
+  transform:scale(1.5);
+}
+```
+***
+animation
+```css
+#heart{
+  margin:100px;
+  position:relative;
+  display: inline-block;
+  animation: heart 1s alternate infinite;
+}
+#heart:hover{
+  from{
+    transform:scale(1.0);
+  }
+  to{
+    transform:scale(2.0);
+  }
+}
+```
+***
+个人感觉animation更灵活一些
+***
+### HTTP部分
+127.0.0.1 表示自己
+localhost 表示通过host指向自己
+0.0.0.0 不指向任何设备
+node.js
+``这种引号里面可以用回车
+''这种引号必须写\n才能回车
+vscode ctrl+/ 一键注释
+node server.js 8888 运行js服务器
