@@ -344,11 +344,12 @@ animation
 个人感觉animation更灵活一些
 ***
 ### HTTP部分
-127.0.0.1 表示自己
-localhost 表示通过host指向自己
-0.0.0.0 不指向任何设备
+127.0.0.1 表示自己<br>
+localhost 表示通过host指向自己<br>
+0.0.0.0 不指向任何设备<br>
 node.js
-``这种引号里面可以用回车
-''这种引号必须写\n才能回车
-vscode ctrl+/ 一键注释
+* ``这种引号里面可以用回车
+* ''这种引号必须写\n才能回车
+
+vscode ctrl+/ 一键注释<br>
 node server.js 8888 运行js服务器
