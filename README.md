@@ -428,3 +428,21 @@ JavaScript的走位
 2. Gmail也开创了互联网先河，浏览器竟然可以收邮件，以前收邮件都是下载软件的，Gmail正是JS写的。也是JS的正名之作。
 3. 移动端上使用JS很省电，至少比Flash省……
 4. Node.js的出现，使得JS前后端通吃。
+
+***
+## 1.20
+把HTML和CSS下载并合并起来的过程，叫做渲染<br>
+浏览器的功能模块：用户界面、渲染引擎、JS引擎、存储。
+线程是一种比进程更小的东西
+JS有些什么引擎呢
+* Chrome用的V8，C++写
+* Firefox用的SpiderMonkey，C++写
+* Safari用的JavaScriptCore，不用记
+* IE用的Chakra(JScript9)
+* Edge用的V8
+* Node.js用的V8
+>我们主要讲V8
+>JS引擎的作用是编译、优化、执行和垃圾回收
+
+## 7.11
+懒狗回归
